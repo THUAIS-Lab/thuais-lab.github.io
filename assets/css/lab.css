@@ -34,7 +34,7 @@ body a { color: var(--lab-plum); text-underline-offset: .18em; }
 .lab-nav .container { min-height: 3.2rem; }
 #navbar .lab-wordmark {
   color: var(--lab-ink);
-  font: 700 1.85rem/1 var(--lab-serif);
+  font: 700 1.85rem/1 var(--lab-serif-en);
   letter-spacing: -.05em;
 }
 #navbar .lab-wordmark em { color: var(--lab-plum); font-weight: 500; }
@@ -61,12 +61,12 @@ body [role="main"] { margin-top: clamp(2.25rem, 5vw, 4.5rem); }
   color: var(--lab-plum); font-weight: 650; font-size: .875rem;
   letter-spacing: .14em; text-transform: uppercase; margin: 0 0 1rem;
 }
-.lab-intro h1, .post-header .post-title, .section-heading h2, .people-section h2 {
+.post-header .post-title, .section-heading h2, .people-section h2 {
   font-family: var(--lab-serif);
   color: var(--lab-ink);
   font-weight: 500;
 }
-.lab-intro h1 { font-family: var(--lab-serif-en); margin: 0; font-size: clamp(2.7rem, 4.85vw, 4.35rem); line-height: 1; letter-spacing: -.045em; }
+.lab-intro h1 { color: var(--lab-ink); font-family: var(--lab-serif-en); font-weight: 500; margin: 0; font-size: clamp(2.7rem, 4.85vw, 4.35rem); line-height: 1; letter-spacing: -.045em; }
 .lab-intro h1 em { color: var(--lab-plum); font-weight: 400; }
 .lab-intro .lab-intro-text { max-width: 28rem; margin: 0 0 .2rem; color: var(--lab-muted); font-size: 1.03rem; line-height: 1.65; }
 .lab-intro-text a, .group-photo figcaption a, .people-list a { text-decoration: underline; }
