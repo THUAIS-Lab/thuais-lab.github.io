@@ -3,7 +3,8 @@ html:root {
   --lab-muted: #5c5964;
   --lab-plum: #69396f;
   --lab-rule: #dcd7df;
-  --lab-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --lab-serif-en: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --lab-serif: var(--lab-serif-en);
 }
 
 html:root[data-theme="dark"] {
@@ -65,7 +66,7 @@ body [role="main"] { margin-top: clamp(2.25rem, 5vw, 4.5rem); }
   color: var(--lab-ink);
   font-weight: 500;
 }
-.lab-intro h1 { margin: 0; font-size: clamp(2.7rem, 4.85vw, 4.35rem); line-height: 1; letter-spacing: -.045em; }
+.lab-intro h1 { font-family: var(--lab-serif-en); margin: 0; font-size: clamp(2.7rem, 4.85vw, 4.35rem); line-height: 1; letter-spacing: -.045em; }
 .lab-intro h1 em { color: var(--lab-plum); font-weight: 400; }
 .lab-intro .lab-intro-text { max-width: 28rem; margin: 0 0 .2rem; color: var(--lab-muted); font-size: 1.03rem; line-height: 1.65; }
 .lab-intro-text a, .group-photo figcaption a, .people-list a { text-decoration: underline; }
@@ -143,8 +144,6 @@ body [role="main"] { margin-top: clamp(2.25rem, 5vw, 4.5rem); }
 html:lang(zh-CN) {
   --lab-serif: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", SimSun, serif;
 }
-html:lang(zh-CN) .lab-intro h1 { line-height: 1.15; letter-spacing: .015em; }
-html:lang(zh-CN) .lab-intro h1 em { font-style: normal; }
 html:lang(zh-CN) .lab-intro-text, html:lang(zh-CN) .research-intro { line-height: 1.85; }
 @media (max-width: 575px) {
   #navbar .lab-language { margin-left: auto; padding: .5rem; border: 0; }
